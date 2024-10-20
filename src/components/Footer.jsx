@@ -1,5 +1,3 @@
-
-import Albertverso from '../pages/Home';
 export default function Footer() {
     return (
         <footer

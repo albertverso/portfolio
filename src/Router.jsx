@@ -12,7 +12,6 @@ export default function AppRouter() {
             <Header />
             <main className="flex-grow">
                 <Routes>
-                    <Route path="/Albertverso" element={<Navigate to="/home" />}/>
                     <Route path="/" element={<Navigate to="/home" />}/>
                     <Route path="*" element={<Navigate to="/home" />}/>
                     <Route

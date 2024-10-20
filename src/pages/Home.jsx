@@ -20,8 +20,8 @@ export default function Home() {
             <div className="flex flex-col gap-5 lg:gap-10 text-center">
                 <img src={title}/>
                 <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-10">
-                    <p className="lg:w-2/5">I'm currently orchestrating experinences at Hero Digital for a leading tech company that rhymes with Snapple, headquarted in Cupertino, California.</p>
-                    <p className="lg:w-2/5">I'm a passionate designer with many years of experince who uses reserach, data, and thoughtful desigh to create delightful products that scale.</p>
+                    <p className="lg:w-2/5">Atualmente, atuo como desenvolvedor de automações de sistemas para o Grupo Carmais, empresa líder no segmento de concessionárias no Ceará e uma das maiores do Brasil, que continua buscando inovar e aprimorar suas tecnologias.</p>
+                    <p className="lg:w-2/5">Sou desenvolvedor fullstack com 2 anos de experiência, focado em criar soluções eficientes e escaláveis. Combinando habilidades de frontend e backend, busco sempre melhorar a experiência do usuário.</p>
                     <div className="lg:w-1/5 flex flex-row items-center justify-center font-semibold lg:mt-auto">
                         <Link className="lg:ml-auto flex border-b-[1px] hover:border-red-500 hover:text-red-500 items-center justify-center">
                             <p className="text-nowrap">
