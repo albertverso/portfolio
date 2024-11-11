@@ -8,21 +8,43 @@ export default function Contact() {
             <div className="border-t w-full">
 
             </div>
-            <div className="flex flex-col lg:pt-20 gap-5 lg:gap-20 lg:flex-row">
+            <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10">
+                <div className="flex flex-col gap-5 w-full">
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="">Nome</label>
+                        <input type="text" className="outline-none p-1 focus:ring-2 focus:ring-red-500 rounded-md" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="">Email</label>
+                        <input type="email" className="outline-none p-1 focus:ring-2 focus:ring-red-500 rounded-md" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="">Assunto</label>
+                        <input type="text" className="outline-none p-1 focus:ring-2 focus:ring-red-500 rounded-md" />
+                    </div>
+                </div>
+                <div className="flex flex-col w-full">
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="">Mensagem</label>
+                        <textarea className="outline-none resize-none p-1 focus:ring-2 h-48 focus:ring-red-500 rounded-md" />
+                    </div>
+                </div>
+            </div>
+            <div className="flex gap-5 lg:gap-10 flex-row">
                 <a href="http://www.github.com/albertverso" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center" target="_blank" rel="noopener noreferrer">
-                    <PiGithubLogoBold className="text-white hover:text-red-500 group-hover:text-red-500  text-7xl"/>
+                    <PiGithubLogoBold className="text-white hover:text-red-500 group-hover:text-red-500 text-5xl"/>
                     <p className="group-hover:text-red-500 ">Github</p>
                 </a>
                 <a href="http://www.linkedin.com/in/albertverso" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center" target="_blank" rel="noopener noreferrer">
-                    <PiLinkedinLogoBold className="text-white text-7xl hover:text-red-500 group-hover:text-red-500 "/>
+                    <PiLinkedinLogoBold className="text-white text-5xl hover:text-red-500 group-hover:text-red-500 "/>
                     <p className="group-hover:text-red-500 ">Linkedin</p>
                 </a>
                 <a href="http://www.instagram.com/albertverso" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center" target="_blank" rel="noopener noreferrer">
-                    <PiInstagramLogoBold className="text-white text-7xl hover:text-red-500 group-hover:text-red-500 "/>
+                    <PiInstagramLogoBold className="text-white text-5xl hover:text-red-500 group-hover:text-red-500 "/>
                     <p className="group-hover:text-red-500 ">Instagram</p>
                 </a>
                 <a href="mailto:alsguert@gmail.com" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center">
-                    <TfiEmail className="text-white text-7xl hover:text-red-500 group-hover:text-red-500 "/>
+                    <TfiEmail className="text-white text-5xl hover:text-red-500 group-hover:text-red-500 "/>
                     <p className="group-hover:text-red-500 ">Email</p>
                 </a>
             </div>

@@ -6,6 +6,8 @@ import pb_kotlin from "../assets/iconsPB/pb_kotlin.png";
 import pb_css from "../assets/iconsPB/pb_css3.png";
 import pb_bootstrap from "../assets/iconsPB/pb_bootstrap.png";
 import pb_html from "../assets/iconsPB/pb_html.png";
+import pb_python from "../assets/iconsPB/pb_python.png";
+import pb_selenium from "../assets/iconsPB/pb_selenium.png";
 
 export default function About() {
     return (
@@ -86,38 +88,32 @@ export default function About() {
                             </div>
                         </div>
                     </div>
+                    <div className="flex flex-col">
+                        <h1>- Desenvolvedor de automações | <a href="https://www.grupocarmais.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">Grupo Carmais</a> | 2024 - Atualmente</h1>
+                        <p className="mt-2">Atualmente, atuo como desenvolvedor de automações de sistemas. Utilizamos Robotic Process Automation (RPA) com Python para reduzir
+                         consideravelmente a necessidade de os trabalhadores executarem tarefas de grande volume baseadas em regras. Usamos Selenium para controlar o navegador e automatizar a execução de tarefas, Pyautogui para controlar o mouse, teclado, capturar e processar imagens.</p>
+                        <div className="flex flex-row">
+
+                        </div>
+                        <div className="flex flex-col items-center justify-center gap-5">
+                            <div className="flex flex-row gap-1 md:gap-2 rounded-3xl px-1 py-4 md:px-4 md:py-5 lg:p-5">
+                                <div className="relative group">
+                                    <img src={pb_python} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                        <span className="text-black text-sm">PYTHON</span>
+                                    </div>
+                                </div>
+                                <div className="relative group">
+                                    <img src={pb_selenium} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                        <span className="text-black text-sm font-bold">SELENIUM</span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex w-3/4 flex-col items-start justify-center text-lg gap-2 border lg:p-10 p-5">
-                    <p> Tenho <strong>2 anos de experiênciaa</strong> em desenvolvimento, começando como desenvolvedor web frontend em uma fintech de pagamento de contas. Durante esse período, fui responsável por desenvolver e melhorar o site, dashboard e aplicativo da empresa, utilizando tecnologias como:</p>
-                    <ul className="list-disc ml-5 mb-3">
-                        <li>React Native</li>
-                        <li>TypeScript</li>
-                        <li>JavaScript</li>
-                        <li>Tailwind CSS</li>
-                        <li>Bootstrap</li>
-                        <li>Redux</li>
-                        <li>Kotlin</li>
-                    </ul>
-                    <p className="">
-                        Atualmente, atuo como desenvolvedor de automações de sistemas para o <strong>Grupo Carmais</strong>, uma das maiores concessionárias do Brasil, localizada no Ceará. Utilizamos <strong>Robotic Process Automation (RPA)</strong> com Python para reduzir consideravelmente a necessidade de os trabalhadores executarem tarefas de grande volume baseadas em regras.
-                    </p>
-                    <p>
-                        Além disso, tenho conhecimentos também em tecnologias como:
-                    </p>
-                    <ul className="list-disc ml-5 mb-3">
-                        <li>Django</li>
-                        <li>Flask</li>
-                    
-                        <li>React.js</li>
-                        <li>Express</li>
-                        <li>Sequelize</li>
-                        <li>Node.js</li>
-                        <li>Jwt</li>
-                        <li>Cloudinary</li>
-                        <li>Google AI Generative Language</li>
-                        <li>Google Visiont</li>
-                    </ul>
-                </div>   
             </div>  
         </div>
     )}
