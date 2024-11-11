@@ -88,7 +88,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex w-3/4 flex-col items-start justify-center text-lg gap-2 border lg:p-10 p-5">
-                    <p> Tenho <strong>2 anos de experiência</strong> em desenvolvimento, começando como desenvolvedor web frontend em uma fintech de pagamento de contas. Durante esse período, fui responsável por desenvolver e melhorar o site, dashboard e aplicativo da empresa, utilizando tecnologias como:</p>
+                    <p> Tenho <strong>2 anos de experiênciaa</strong> em desenvolvimento, começando como desenvolvedor web frontend em uma fintech de pagamento de contas. Durante esse período, fui responsável por desenvolver e melhorar o site, dashboard e aplicativo da empresa, utilizando tecnologias como:</p>
                     <ul className="list-disc ml-5 mb-3">
                         <li>React Native</li>
                         <li>TypeScript</li>
