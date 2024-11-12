@@ -20,11 +20,11 @@ export default function Header() {
                     <p className="text-white text-2xl mt-4 ml-[58px] absolute">VERSO</p>
                 </div>
             </div>
-            <div className="flex flex-row text-start lg:justify-center lg:items-center lg:text-center justify-between lg:ml-auto text-white font-black lg:gap-10 text-lg">
-                <Link to="/home" className={`hover:text-red-500 ${activePath === '/home' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>Inicio</Link>
-                <Link to="/projects" className={`hover:text-red-500 ${activePath === '/projects' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>Projetos</Link>
-                <Link to="/about" className={`hover:text-red-500 ${activePath === '/about' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>Sobre</Link>
-                <Link to="/contact" className={`hover:text-red-500 ${activePath === '/contact' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>Contato</Link>
+            <div className="flex flex-row text-start lg:justify-end lg:items-end lg:text-end justify-between lg:ml-auto text-white font-black lg:gap-10 text-md lg:text-lg">
+                <Link to="/home" className={`hover:text-red-500 ${activePath === '/home' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>INICIO</Link>
+                <Link to="/projects" className={`hover:text-red-500 ${activePath === '/projects' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>PROJETOS</Link>
+                <Link to="/about" className={`hover:text-red-500 ${activePath === '/about' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>SOBRE</Link>
+                <Link to="/contact" className={`hover:text-red-500 ${activePath === '/contact' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>CONTATO</Link>
             </div>
             <LanguageDropdown />
         </nav>
