@@ -20,7 +20,7 @@ export default function Home() {
         const pathCV = '/CV.pdf';
         const link = document.createElement('a');
         link.href = pathCV;
-        link.download = 'CV.pdf';
+        link.download = 'Carlos_Alberto.pdf';
         link.click();
     }
 
@@ -30,7 +30,7 @@ export default function Home() {
                 <img src={title}/>
                 <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-10">
                     <p className="lg:w-2/5">Sou desenvolvedor fullstack com 2 anos de experiência, focado em criar soluções eficientes e escaláveis. Combinando habilidades de frontend e backend, busco sempre melhorar a experiência do usuário.</p>
-                    <p className="lg:w-2/5">Atualmente, atuo como desenvolvedor de automações de sistemas para o Grupo Carmais, grupo líder no segmento de concessionárias no Nordeste e uma das maiores do Brasil, que continua buscando inovar e aprimorar suas tecnologias.</p>
+                    <p className="lg:w-2/5">Atualmente, atuo como desenvolvedor de automações de sistemas para o Grupo Carmais, grupo líder no segmento de concessionárias no Nordeste e uma das maiores do Brasil, que continua buscando aprimorar suas tecnologias.</p>
                     <div className="lg:w-1/5 flex flex-col items-center justify-center font-semibold lg:mt-auto">
                         <button onClick={handleDownloadCV} className="flex flex-row mb-5 w-full items-center justify-center gap-2 border border-white rounded-md p-2 hover:border-red-500 hover:text-red-500">
                             Download CV
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="relative flex flex-col items-center justify-center">
-                <div className="flex items-center justify-center bg-white w-[350px] h-[350px] sm:w-[500px] sm:h-[500px]  md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden relative">
+                <div className="flex items-center  justify-center bg-white w-[350px] h-[350px] sm:w-[500px] sm:h-[500px]  md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden relative">
                     <img src={background} alt="" className="bg-cover w-[350px] h-[350px] sm:w-[500px] sm:h-[500px]  md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] bg-center" />
                     <img src={profile} alt="" className="hover:scale-125 transition-transform duration-300 absolute h-[400px] sm:h-[550px] md:h-[600px] lg:h-[650px] -bottom-2 left-1 lg:left-4 -rotate-3" />
                 </div>

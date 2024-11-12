@@ -32,7 +32,7 @@ const LanguageDropdown = () => {
   }, []);
 
   return (
-    <div className="absolute top-14 right-4 md:right-20 lg:right-10 lg:top-10" ref={dropdownRef}>
+    <div className="absolute top-14 right-5 md:right-20 lg:right-10" ref={dropdownRef}>
       <button
         className={`bg-black group text-white border hover:border-red-500 flex flex-row items-center justify-center gap-2 rounded-lg p-2 w-full ${isOpen ? 'border-red-500' : 'border-white'}`}
         onClick={toggleDropdown}
