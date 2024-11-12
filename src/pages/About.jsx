@@ -15,7 +15,7 @@ export default function About() {
             <div className="border-t w-full">
             </div> 
             <div className="flex flex-col items-center justify-center gap-5 lg:gap-10 mt-8"> 
-                <div className="flex w-full flex-col items-start justify-center text-lg gap-2 border rounded-lg lg:p-10 p-5">
+                <div className="flex w-full flex-col items-start justify-center text-lg gap-5 border rounded-lg lg:p-10 p-5">
                     <h1 className="text-3xl mb-5">Sobre</h1>
                     <p>
                     Meu nome é <strong>Carlos Alberto</strong>, sou desenvolvedor fullstack e moro em Fortaleza, CE, Brasil. Estou cursando Análise 
@@ -27,7 +27,7 @@ export default function About() {
                     soluções inovadoras.
                     </p>
                 </div>
-                <div className="flex w-full flex-col items-start justify-center text-lg gap-2 border rounded-lg lg:p-10 p-5">
+                <div className="flex w-full flex-col items-start justify-center text-lg gap-5 border rounded-lg lg:p-10 p-5">
                     <h1 className="text-3xl mb-5">Experiência</h1>
                     <div className="flex flex-col">
                         <h1>- Desenvolvedor Frontend | <a href="https://www.somoscontapaga.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">ContaPaga</a> | 2022 - 2023</h1>
@@ -38,50 +38,50 @@ export default function About() {
                         <div className="flex flex-col items-center justify-center gap-5">
                             <div className="flex flex-row gap-1 md:gap-2 rounded-3xl px-1 py-4 md:px-4 md:py-5 lg:p-5">
                                 <div className="relative group">
-                                    <img src={pb_react} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_react} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm">REACT</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_kotlin} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_kotlin} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">KOTLIN</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_js} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_js} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">JAVASCRIPT</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_tailwind} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_tailwind} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">TAILWIND</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_typescript} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_typescript} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">TYPESCRIPT</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_css} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_css} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">CSS</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_html} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_html} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">HTML</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_bootstrap} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_bootstrap} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">BOOTSTRAP</span>
                                     </div>
                                 </div>
@@ -98,14 +98,14 @@ export default function About() {
                         <div className="flex flex-col items-center justify-center gap-5">
                             <div className="flex flex-row gap-1 md:gap-2 rounded-3xl px-1 py-4 md:px-4 md:py-5 lg:p-5">
                                 <div className="relative group">
-                                    <img src={pb_python} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_python} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm">PYTHON</span>
                                     </div>
                                 </div>
                                 <div className="relative group">
-                                    <img src={pb_selenium} alt="" className="h-[20px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-2xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
+                                    <img src={pb_selenium} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
+                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
                                         <span className="text-black text-sm font-bold">SELENIUM</span>
                                     </div>
                                 </div>
