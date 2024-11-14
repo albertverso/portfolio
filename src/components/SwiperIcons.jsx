@@ -1,9 +1,7 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// import required modules
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
+import { useLocation } from 'react-router-dom';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,13 +9,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "../styles/index.css"
 
+export default function SwiperIcons({images, spaceBetween = 0, size='md', view = 0}) {
+    const location = useLocation();
 
-export default function SwiperIcons({images}) {
     return (
         <>
             <Swiper 
-                slidesPerView={8}
-                spaceBetween={0}
+                slidesPerView={view}
+                spaceBetween={spaceBetween}
                 autoplay={{
                     delay: 500,
                     disableOnInteraction: false,
@@ -25,13 +24,13 @@ export default function SwiperIcons({images}) {
                 loop={true}
                 modules={[Autoplay, Navigation]}
                 
-                className="mySwiper">
+                className={`mySwiper overflow-visible md:px-5 ${ location.pathname === '/home' && 'left-2 md:left-6 lg:left-10'}  `}>
                 {images.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className=" group">
-                            <img src={image} alt={`Slide ${index + 1}`} className="h-[30px] lg:h-[60px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                            <div className="absolute hidden -bottom-12 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 lg:flex items-center justify-center transition-opacity duration-300">
-                                <span className="text-black font-bold">{image.split('/').pop().split('.')[0]} sdfsdfsdfsdf</span>
+                    <div className={`flex items-center justify-center relative group ${size === 'sm' && 'h-8' }`}>
+                            <img src={image} alt={`Slide ${index + 1}`} className={`transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer`} />
+                            <div className="absolute hidden -bottom-11 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 lg:flex items-center justify-center transition-opacity duration-300 z-10">
+                                <span className={` ${size === 'sm' && 'text-sm'} text-black font-bold uppercase`}>{image.split('/').pop().split('.')[0]}</span>
                             </div>
                         </div>
                 </SwiperSlide>

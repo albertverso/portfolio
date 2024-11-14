@@ -1,13 +1,13 @@
-import pb_js from "../assets/iconsPB/pb_js.png";
-import pb_react from "../assets/iconsPB/pb_react.png";
-import pb_tailwind from "../assets/iconsPB/pb_tailwind.png";
-import pb_typescript from "../assets/iconsPB/pb_typescript.png";
-import pb_kotlin from "../assets/iconsPB/pb_kotlin.png";
-import pb_css from "../assets/iconsPB/pb_css3.png";
-import pb_bootstrap from "../assets/iconsPB/pb_bootstrap.png";
-import pb_html from "../assets/iconsPB/pb_html.png";
-import pb_python from "../assets/iconsPB/pb_python.png";
-import pb_selenium from "../assets/iconsPB/pb_selenium.png";
+import pb_js from "../assets/iconsPB/javascript.png";
+import pb_react from "../assets/iconsPB/react.png";
+import pb_tailwind from "../assets/iconsPB/tailwind.png";
+import pb_typescript from "../assets/iconsPB/typescript.png";
+import pb_kotlin from "../assets/iconsPB/kotlin.png";
+import pb_css from "../assets/iconsPB/css.png";
+import pb_bootstrap from "../assets/iconsPB/bootstrap.png";
+import pb_html from "../assets/iconsPB/HTML.png";
+import pb_python from "../assets/iconsPB/python.png";
+import pb_selenium from "../assets/iconsPB/selenium.png";
 
 export default function About() {
     return (
