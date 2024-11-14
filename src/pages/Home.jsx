@@ -14,6 +14,7 @@ import pb_css from "../assets/iconsPB/pb_css3.png";
 import pb_bootstrap from "../assets/iconsPB/pb_bootstrap.png";
 import pb_html from "../assets/iconsPB/pb_html.png";
 import pb_selenium from "../assets/iconsPB/pb_selenium.png";
+import SwiperIcons from "../components/SwiperIcons";
 
 export default function Home() {
     const handleDownloadCV = () => {
