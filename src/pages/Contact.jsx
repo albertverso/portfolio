@@ -4,10 +4,7 @@ import { PiInstagramLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
 
 export default function Contact() {
     return (
-        <div className="flex flex-col justify-center items-center text-white gap-5 lg:gap-20 font-semibold lg:py-5 w-full px-5 md:px-20 lg:px-32 xl:px-52">
-            <div className="border-t w-full">
-
-            </div>
+        <div className="flex flex-col justify-center items-center text-white gap-5 lg:gap-20 font-semibold w-full px-5 md:px-20 lg:px-32 xl:px-52">
             <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10">
                 <div className="flex flex-col gap-5 w-full">
                     <div className="flex flex-col gap-1">

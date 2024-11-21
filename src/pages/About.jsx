@@ -11,10 +11,8 @@ import pb_selenium from "../assets/iconsPB/selenium.png";
 
 export default function About() {
     return (
-        <div className="flex flex-col justify-center items-center text-white font-semibold lg:py-5 w-full px-5 md:px-20 lg:px-32 xl:px-52">
-            <div className="border-t w-full">
-            </div> 
-            <div className="flex flex-col items-center justify-center gap-5 lg:gap-10 mt-8"> 
+        <div className="flex flex-col justify-center items-center text-white font-semibold w-full px-5 md:px-20 lg:px-32 xl:px-52">
+            <div className="flex flex-col items-center justify-center gap-5 lg:gap-10"> 
                 <div className="flex w-full flex-col items-start justify-center text-lg gap-5 border rounded-lg lg:p-10 p-5">
                     <h1 className="text-3xl mb-5">Sobre</h1>
                     <p>
