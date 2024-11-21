@@ -8,6 +8,7 @@ import pb_bootstrap from "../assets/iconsPB/bootstrap.png";
 import pb_html from "../assets/iconsPB/HTML.png";
 import pb_python from "../assets/iconsPB/python.png";
 import pb_selenium from "../assets/iconsPB/selenium.png";
+import IconsTec from "../components/IconsTec";
 
 export default function About() {
     return (
@@ -30,85 +31,17 @@ export default function About() {
                     <div className="flex flex-col">
                         <h1 className="text-xl font-bold">- Desenvolvedor Frontend | <a href="https://www.somoscontapaga.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">ContaPaga</a> | 2022 - 2023.</h1>
                         <p className="mt-2">Atuei no desenvolvimento de interfaces web, dashboard e plataformas responsivas para o sistema financeiro da empresa. Utilizei React, TypeScript e Tailwind para garantir a criação de interfaces rápidas e funcionais, sempre alinhadas às melhores práticas de UX/UI.</p>
-                        <div className="flex flex-row">
-
-                        </div>
-                        <div className="flex flex-col items-center justify-center gap-5">
-                            <div className="flex flex-row gap-1 md:gap-2 rounded-3xl px-1 py-4 md:px-4 md:py-5 lg:p-5">
-                                <div className="relative group">
-                                    <img src={pb_react} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm">REACT</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_kotlin} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">KOTLIN</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_js} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">JAVASCRIPT</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_tailwind} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">TAILWIND</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_typescript} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">TYPESCRIPT</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_css} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">CSS</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_html} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">HTML</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_bootstrap} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">BOOTSTRAP</span>
-                                    </div>
-                                </div>
-                            </div>
+                        
+                        <div className="flex items-center justify-center">
+                            <IconsTec icons={[pb_react, pb_tailwind, pb_typescript, pb_html, pb_css, pb_bootstrap, pb_kotlin, pb_js]} />
                         </div>
                     </div>
                     <div className="flex flex-col">
                         <h1 className="text-xl font-bold" >- Desenvolvedor de automações | <a href="https://www.grupocarmais.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">Grupo Carmais</a> | 2024 - Atualmente.</h1>
                         <p className="mt-2">Atualmente, atuo como desenvolvedor de automações de sistemas. Utilizamos Robotic Process Automation (RPA) com Python para reduzir
                          consideravelmente a necessidade de os trabalhadores executarem tarefas de grande volume baseadas em regras. Usamos Selenium para controlar o navegador e automatizar a execução de tarefas, Pyautogui para controlar o mouse, teclado, capturar e processar imagens.</p>
-                        <div className="flex flex-row">
-
-                        </div>
-                        <div className="flex flex-col items-center justify-center gap-5">
-                            <div className="flex flex-row gap-1 md:gap-2 rounded-3xl px-1 py-4 md:px-4 md:py-5 lg:p-5">
-                                <div className="relative group">
-                                    <img src={pb_python} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm">PYTHON</span>
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <img src={pb_selenium} alt="" className="h-[30px] lg:h-[40px] transform group-hover:scale-110 transition-transform duration-300 hover:cursor-pointer" />
-                                    <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 p-2 rounded-xl bg-white bg-opacity-60 opacity-0 group-hover:opacity-100 hidden lg:flex items-center justify-center transition-opacity duration-300">
-                                        <span className="text-black text-sm font-bold">SELENIUM</span>
-                                    </div>
-                                </div>
-        
-                            </div>
+                        <div className="flex items-center justify-center">
+                            <IconsTec icons={[pb_python, pb_selenium]}/>
                         </div>
                     </div>
                 </div>

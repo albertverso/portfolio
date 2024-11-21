@@ -11,4 +11,7 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.webm'],
+  optimizeDeps: {
+    include: ["swiper/react", "swiper"],
+  },
 })

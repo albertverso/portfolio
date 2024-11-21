@@ -24,7 +24,7 @@ export default function SwiperIcons({images, spaceBetween = 0, size='md', view =
                 loop={true}
                 modules={[Autoplay, Navigation]}
                 
-                className={`mySwiper overflow-visible md:px-5 ${ location.pathname === '/home' && 'left-2 md:left-6 lg:left-10'}  `}>
+                className={`mySwiperIcon overflow-visible md:px-5 ${ location.pathname === '/home' && 'left-2 md:left-6 lg:left-10'}  `}>
                 {images.map((image, index) => (
                 <SwiperSlide key={index}>
                     <div className={`flex items-center justify-center relative group ${size === 'sm' && 'h-8' }`}>
