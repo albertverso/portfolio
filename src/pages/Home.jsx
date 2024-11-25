@@ -3,17 +3,6 @@ import { Link } from "react-router-dom";
 import title from "../assets/titulo.png";
 import background from "../assets/background.png";
 import profile from "../assets/profile.png";
-import django from "../assets/iconsPB/django.png";
-import js from "../assets/iconsPB/javascript.png";
-import python from "../assets/iconsPB/python.png";
-import react from "../assets/iconsPB/react.png";
-import tailwind from "../assets/iconsPB/tailwind.png";
-import typescript from "../assets/iconsPB/typescript.png";
-import kotlin from "../assets/iconsPB/kotlin.png";
-import css from "../assets/iconsPB/css.png";
-import bootstrap from "../assets/iconsPB/bootstrap.png";
-import html from "../assets/iconsPB/HTML.png";
-import selenium from "../assets/iconsPB/selenium.png";
 import SwiperIcons from "../components/SwiperIcons";
 
 export default function Home() {
