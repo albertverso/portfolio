@@ -48,11 +48,11 @@ export default function Home() {
             <div className="relative flex flex-col items-center justify-center px-10">
                 <div className="flex items-center  justify-center bg-white w-[350px] h-[350px] sm:w-[500px] sm:h-[500px]  md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden relative">
                     <img src={background} alt="" className="bg-cover w-[350px] h-[350px] sm:w-[500px] sm:h-[500px]  md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] bg-center" />
-                    <img src={profile} alt="" className="hover:scale-125 transition-transform duration-300 absolute h-[400px] sm:h-[550px] md:h-[600px] lg:h-[650px] -bottom-2 left-1 lg:left-4 -rotate-3" />
+                    <img src={"profile"} alt="" className="hover:scale-110 transition-transform duration-300 absolute h-[400px] sm:h-[550px] md:h-[600px] lg:h-[650px] -bottom-2 left-1 lg:left-4 -rotate-3" />
                 </div>
             </div>
-            <div className="flex relative justify-center items-center text-white w-full px-10">
-                <SwiperIcons size="md" view={10} spaceBetween={10} images={[django, js, python, react, tailwind, typescript, kotlin, css, bootstrap, html, selenium]}/>
+            <div className="flex relative justify-center items-center text-white w-full px-10 -right-3">
+                <SwiperIcons size="md" view={10} spaceBetween={10} />
             </div>   
         </div>
     )
