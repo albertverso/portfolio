@@ -34,7 +34,7 @@ export default function Projects() {
                 title={"To-do List"}
                 images={[t_login_page, t_home_page, t_home_menu, t_task_page, t_profile_page, t_loading_page]}
                 description={ "Adicionar Descrição"} 
-                icons={[react, js, tailwind, html, css, bootstrap]}
+                icons={[{name: "React", image: react}, {name: "Javascript", image: js}, {name: "Tailwind", image: tailwind}, {name: "HTML", image: html}, {name: "CSS", image: css}, {name: "Bootstrap", image: bootstrap}]}
                 repo={"https://github.com/albertverso"}
                 site={"https://github.com/albertverso"}    
             />
@@ -42,7 +42,7 @@ export default function Projects() {
                 title={"DripStore"}
                 images={[d_home_page, d_home_page2, d_login_page, d_products_page]} 
                 description={ "Adicionar Descrição"} 
-                icons={[react, js, tailwind, html, css, bootstrap]}
+                icons={[{name: "React", image: react}, {name: "Javascript", image: js}, {name: "Tailwind", image: tailwind}, {name: "HTML", image: html}, {name: "CSS", image: css}, {name: "Bootstrap", image: bootstrap}]}
                 repo={"https://github.com/albertverso"}
                 site={"https://github.com/albertverso"}  
             />
@@ -50,7 +50,7 @@ export default function Projects() {
                 title={"Ecommerce"}
                 images={[ e_login_page, e_home_page, e_home_menu, e_added_product, e_edit_product]} 
                 description={ "Adicionar Descrição"} 
-                icons={[python, django, js, tailwind, html, css]}
+                icons={[{name: "Python", image: python}, {name: "Django", image: django}, {name: "Javascript", image: js}, {name: "Tailwind", image: tailwind}, {name: "HTML", image: html}, {name: "CSS", image: css}]}
                 repo={"https://github.com/albertverso"}
                 site={"https://github.com/albertverso"}  
             />
@@ -58,7 +58,7 @@ export default function Projects() {
                 title={"IA Gemini"}
                 images={[ia_home_page, ia_login_page, ia_register_page, ia_seach_page]} 
                 description={ "Adicionar Descrição"} 
-                icons={[python, js, react, html, tailwind, css]}
+                icons={[{name: "Python", image: python}, {name: "Javascript", image: js}, {name: "React", image: react}, {name: "HTML", image: html}, {name: "Tailwind", image: tailwind}, {name: "CSS", image: css}]}
                 repo={"https://github.com/albertverso"}
                 site={"https://github.com/albertverso"}  
             />

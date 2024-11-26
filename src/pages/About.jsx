@@ -33,7 +33,7 @@ export default function About() {
                         <p className="mt-2">Atuei no desenvolvimento de interfaces web, dashboard e plataformas responsivas para o sistema financeiro da empresa. Utilizei React, TypeScript e Tailwind para garantir a criação de interfaces rápidas e funcionais, sempre alinhadas às melhores práticas de UX/UI.</p>
                         
                         <div className="flex items-center justify-center">
-                            <IconsTec icons={[pb_react, pb_tailwind, pb_typescript, pb_html, pb_css, pb_bootstrap, pb_kotlin, pb_js]} />
+                            <IconsTec icons={[{name: "React", image: pb_react}, {name: "Tailwind", image: pb_tailwind}, {name: "Typescript", image: pb_typescript}, {name: "HTML", image: pb_html}, {name: "CSS", image: pb_css}, {name: "Bootstrap", image: pb_bootstrap}, {name: "Kotlin", image: pb_kotlin}, {name: "Javascript", image: pb_js}]} />
                         </div>
                     </div>
                     <div className="flex flex-col">
@@ -41,7 +41,7 @@ export default function About() {
                         <p className="mt-2">Atualmente, atuo como desenvolvedor de automações de sistemas. Utilizamos Robotic Process Automation (RPA) com Python para reduzir
                          consideravelmente a necessidade de os trabalhadores executarem tarefas de grande volume baseadas em regras. Usamos Selenium para controlar o navegador e automatizar a execução de tarefas, Pyautogui para controlar o mouse, teclado, capturar e processar imagens.</p>
                         <div className="flex items-center justify-center">
-                            <IconsTec icons={[pb_python, pb_selenium]}/>
+                            <IconsTec icons={[{name: "Python", image: pb_python}, {name: "Selenium", image: pb_selenium}]}/>
                         </div>
                     </div>
                 </div>
