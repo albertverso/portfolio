@@ -10,7 +10,7 @@ export default function AppRouter() {
     return (
         <div className={`flex flex-col min-h-screen bg-black`}>
             <Header />
-            <main className="flex-grow">
+            <main className="flex-grow w-full">
                 <Routes>
                     <Route path="/" element={<Navigate to="/home" />}/>
                     <Route path="*" element={<Navigate to="/home" />}/>

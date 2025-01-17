@@ -9,6 +9,15 @@ import pb_html from "../assets/iconsPB/HTML.png";
 import pb_python from "../assets/iconsPB/python.png";
 import pb_selenium from "../assets/iconsPB/selenium.png";
 import IconsTec from "../components/IconsTec";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineOppositeContent, {
+  timelineOppositeContentClasses,
+} from '@mui/lab/TimelineOppositeContent';
 
 export default function About() {
     return (
@@ -26,26 +35,57 @@ export default function About() {
                     soluções inovadoras.
                     </p>
                 </div>
-                <div className="flex w-full flex-col items-start justify-center text-lg gap-5 border rounded-lg lg:p-10 p-5">
-                    <h1 className="text-3xl mb-5">Experiência</h1>
-                    <div className="flex flex-col">
-                        <h1 className="text-xl font-bold">- Desenvolvedor Frontend | <a href="https://www.somoscontapaga.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">ContaPaga</a> | 2022 - 2023.</h1>
-                        <p className="mt-2">Atuei no desenvolvimento de interfaces web, dashboard e plataformas responsivas para o sistema financeiro da empresa. Utilizei React, TypeScript e Tailwind para garantir a criação de interfaces rápidas e funcionais, sempre alinhadas às melhores práticas de UX/UI.</p>
-                        
-                        <div className="flex items-center justify-center">
-                            <IconsTec icons={[{name: "React", image: pb_react}, {name: "Tailwind", image: pb_tailwind}, {name: "Typescript", image: pb_typescript}, {name: "HTML", image: pb_html}, {name: "CSS", image: pb_css}, {name: "Bootstrap", image: pb_bootstrap}, {name: "Kotlin", image: pb_kotlin}, {name: "Javascript", image: pb_js}]} />
+                <div className="flex w-full flex-col-reverse lg:flex-row items-center justify-center text-lg gap-5 border rounded-lg lg:p-10 p-5">
+                    <div className="flex flex-col items-start lg:gap-5 gap-1">
+                        <h1 className="text-3xl mb-5">Experiência</h1>
+                        <div className="flex flex-col">
+                            <h1 className="text-xl font-bold">- Desenvolvedor Frontend | <a href="https://www.somoscontapaga.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">ContaPaga</a> | 2022 - 2023.</h1>
+                            <p className="mt-2">Atuei no desenvolvimento de interfaces web, dashboard e plataformas responsivas para o sistema financeiro da empresa. Utilizei React, TypeScript e Tailwind para garantir a criação de interfaces rápidas e funcionais, sempre alinhadas às melhores práticas de UX/UI.</p>
+                            
+                            <div className="flex items-center justify-center">
+                                <IconsTec icons={[{name: "React", image: pb_react}, {name: "Tailwind", image: pb_tailwind}, {name: "Typescript", image: pb_typescript}, {name: "HTML", image: pb_html}, {name: "CSS", image: pb_css}, {name: "Bootstrap", image: pb_bootstrap}, {name: "Kotlin", image: pb_kotlin}, {name: "Javascript", image: pb_js}]} />
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <h1 className="text-xl font-bold" >- Desenvolvedor de Automações | <a href="https://www.grupocarmais.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">Grupo Carmais</a> | 2024 - Atualmente.</h1>
+                            <p className="mt-2">Atualmente, atuo como desenvolvedor de automações de sistemas. Utilizamos Robotic Process Automation (RPA) com Python para reduzir
+                            consideravelmente a necessidade de os trabalhadores executarem tarefas de grande volume baseadas em regras. Usamos Selenium para controlar o navegador e automatizar a execução de tarefas, Pyautogui para controlar o mouse, teclado, capturar e processar imagens.</p>
+                            <div className="flex items-center justify-center">
+                                <IconsTec icons={[{name: "Python", image: pb_python}, {name: "Selenium", image: pb_selenium}]}/>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-col">
-                        <h1 className="text-xl font-bold" >- Desenvolvedor de automações | <a href="https://www.grupocarmais.com.br/" target="_blank" className="hover:text-red-500" rel="noopener noreferrer">Grupo Carmais</a> | 2024 - Atualmente.</h1>
-                        <p className="mt-2">Atualmente, atuo como desenvolvedor de automações de sistemas. Utilizamos Robotic Process Automation (RPA) com Python para reduzir
-                         consideravelmente a necessidade de os trabalhadores executarem tarefas de grande volume baseadas em regras. Usamos Selenium para controlar o navegador e automatizar a execução de tarefas, Pyautogui para controlar o mouse, teclado, capturar e processar imagens.</p>
-                        <div className="flex items-center justify-center">
-                            <IconsTec icons={[{name: "Python", image: pb_python}, {name: "Selenium", image: pb_selenium}]}/>
-                        </div>
+                    <div>
+                        <Timeline
+                        sx={{
+                            [`& .${timelineOppositeContentClasses.root}`]: {
+                            flex: 0.2,
+                            },
+                        }}
+                        >
+                            <TimelineItem>
+                                <TimelineOppositeContent >
+                                2023
+                                </TimelineOppositeContent>
+                                <TimelineSeparator>
+                                <TimelineDot />
+                                <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>Desenvolvedor Frontend</TimelineContent>
+                            </TimelineItem>
+                            <TimelineItem>
+                                <TimelineOppositeContent >
+                                2024
+                                </TimelineOppositeContent>
+                                <TimelineSeparator>
+                                <TimelineDot />
+                                </TimelineSeparator>
+                                <TimelineContent>Desenvolvedor de Automações</TimelineContent>
+                            </TimelineItem>
+                        </Timeline>
                     </div>
                 </div>
-            </div>  
+            </div> 
         </div>
     )}
              
