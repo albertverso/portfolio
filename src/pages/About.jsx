@@ -21,7 +21,7 @@ import TimelineOppositeContent, {
 
 export default function About() {
     return (
-        <div className="flex flex-col justify-center items-center text-white font-semibold w-full px-5 md:px-20 lg:px-32 xl:px-52">
+        <div className="flex flex-col justify-center items-center text-white font-semibold">
             <div className="flex flex-col items-center justify-center gap-5 lg:gap-10"> 
                 <div className="flex w-full flex-col items-start justify-center text-lg gap-5 border rounded-lg lg:p-10 p-5">
                     <h1 className="text-3xl mb-5">Sobre</h1>
@@ -31,7 +31,7 @@ export default function About() {
                     começou como desenvolvedor web front-end em uma fintech, e, no início de 2024, concluí um curso especializado em 
                     desenvolvimento fullstack pela <strong> <a href="http://digitalcollege.com.br" className="hover:text-red-500" target="_blank" rel="noopener noreferrer">Digital College</a></strong>, 
                     ampliando meus conhecimentos nas áreas de front e back-end. Atualmente, trabalho como desenvolvedor de automações 
-                    no <strong> <a href="Shttps://carmais.com.br/" className="hover:text-red-500" target="_blank" rel="noopener noreferrer">Grupo Carmais</a></strong>, onde aplico minhas habilidades em tecnologia para otimizar processos e criar 
+                    no <strong> <a href="https://carmais.com.br/" className="hover:text-red-500" target="_blank" rel="noopener noreferrer">Grupo Carmais</a></strong>, onde aplico minhas habilidades em tecnologia para otimizar processos e criar 
                     soluções inovadoras.
                     </p>
                 </div>

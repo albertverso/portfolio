@@ -36,7 +36,7 @@ export default function Contact() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center text-black gap-5 lg:gap-10 font-semibold w-full px-5 md:px-20 lg:px-32 xl:px-52">
+        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center text-black gap-5 lg:gap-10 font-semibold w-full">
             <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10">
                     <div className="flex flex-col gap-5 w-full">
                         <div className="flex flex-col gap-1">

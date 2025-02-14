@@ -4,6 +4,8 @@ import title from "../assets/titulo.png";
 import background from "../assets/background.png";
 import profile from "../assets/profile.png";
 import SwiperIcons from "../components/SwiperIcons";
+import About from "./About";
+import Contact from "./Contact";
 
 export default function Home() {
     const handleDownloadCV = () => {
@@ -42,9 +44,11 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="flex relative justify-center items-center text-white w-full px-10 -right-3">
+            <div className="flex relative justify-center items-center text-white w-full px-10 -right-3 mb-2">
                 <SwiperIcons size="md" view={10} spaceBetween={10} />
             </div>   
+            <About/>
+            <Contact />
         </div>
     )
 }
