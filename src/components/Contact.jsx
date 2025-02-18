@@ -36,8 +36,9 @@ export default function Contact() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center text-black gap-5 lg:gap-10 font-semibold w-full">
-            <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10">
+        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-start text-black gap-5 lg:gap-10 font-semibold w-full">
+            <h1 className="text-3xl mb-5 underline underline-offset-4 text-white">Contato</h1>
+            <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10 px-5">
                     <div className="flex flex-col gap-5 w-full">
                         <div className="flex flex-col gap-1">
                             <label className="text-white">Nome</label>
@@ -94,7 +95,7 @@ export default function Contact() {
                 </button>
                 <span>{error && <p className="text-red-500">{error}</p>}</span>
             </div>
-            <div className="flex gap-5 lg:gap-10 flex-row mt-5 lg:mt-0 text-white">
+            <div className="flex gap-5 lg:gap-10 flex-row mt-5 lg:mt-0 items-center justify-center w-full text-white">
                 <a href="http://www.github.com/albertverso" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center" target="_blank" rel="noopener noreferrer">
                     
                 <BsGithub className="text-white hover:text-red-500 group-hover:text-red-500 text-5xl"/>

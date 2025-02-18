@@ -29,7 +29,7 @@ import ia_seach_page from "../assets/prints/ia_gemini/busca.png";
 
 export default function Projects() {
     return (
-        <div className="flex relative flex-col justify-center items-center text-white pb-10 w-full px-5 md:px-20 lg:px-32 xl:px-52 gap-10">
+        <div className="flex relative flex-col justify-center items-center text-white pb-10 w-full px-5 md:px-20 lg:px-32 xl:px-42 gap-1">
             <PreviewProjects 
                 title={"DripStore"}
                 images={[d_home_page, d_home_page2, d_login_page, d_products_page]} 

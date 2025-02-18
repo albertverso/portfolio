@@ -4,8 +4,8 @@ import title from "../assets/titulo.png";
 import background from "../assets/background.png";
 import profile from "../assets/profile.png";
 import SwiperIcons from "../components/SwiperIcons";
-import About from "./About";
-import Contact from "./Contact";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
 export default function Home() {
     const handleDownloadCV = () => {

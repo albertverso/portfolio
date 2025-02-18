@@ -17,8 +17,8 @@ export default function PreviewProjects({title,images, description, icons, repo,
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
-        <div className="flex flex-col justify-center items-start overflow-hidden text-white font-semibold w-full text-lg border rounded-lg lg:p-10 p-5">
-            <h1 className="text-3xl mb-5">{title}</h1>
+        <div className="flex flex-col justify-center items-start overflow-hidden text-white font-semibold w-full text-lg">
+            <h1 className="text-3xl mb-5 underline underline-offset-4 ">{title}</h1>
             <Swiper
                 style={{
                     '--swiper-navigation-color': 'rgba(255, 255, 255, 0.2)',
@@ -33,7 +33,7 @@ export default function PreviewProjects({title,images, description, icons, repo,
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Thumbs, Autoplay]}
-                className="mySwiper2 cursor-grab"
+                className="mySwiper2 cursor-grab "
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
@@ -62,7 +62,7 @@ export default function PreviewProjects({title,images, description, icons, repo,
                     Descrição: <span className='font-normal text-md'>{description}</span>
                 </p>
             </div>
-            <div className="w-full flex flex-col lg:flex-row justify-center mt-2 items-center lg:items-start gap-4 lg:gap-20">
+            <div className="w-full flex flex-col lg:flex-row justify-center mt-2 items-center lg:items-start gap-4 lg:gap-20 mb-10">
                 <div className='flex flex-col items-center justify-start gap-6'>
                     <p>Links:</p>
                     <div className='flex flex-row gap-4'>
