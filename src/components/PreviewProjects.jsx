@@ -57,7 +57,7 @@ export default function PreviewProjects({title,images, description, icons, repo,
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className='flex mt-2 font-bold'>
+            <div className='flex mt-2 font-bold text-justify'>
                 <p>
                     Descrição: <span className='font-normal text-md'>{description}</span>
                 </p>

@@ -21,7 +21,7 @@ export default function Header() {
                         <p className="text-white text-xl mt-4 ml-[58px] absolute">VERSO</p>
                     </div>
                 </div>
-                <div className="flex flex-row mt-4 mr-4 lg:mt-0 text-start lg:justify-end lg:items-end lg:text-end justify-between lg:ml-auto text-white font-black lg:gap-8 text-xs lg:text-sm">
+                <div className="flex flex-row mt-4 gap-10 lg:mt-0 text-start lg:justify-end lg:items-end lg:text-end justify-center lg:ml-auto text-white font-black lg:gap-8 text-xs lg:text-sm">
                     <Link to="/home" className={`hover:text-red-500 ${activePath === '/home' && 'text-red-500 transform scale-125 transition-transform duration-300'}`}>INICIO</Link>
                     <Link to="/projects" className={`hover:text-red-500 ${activePath === '/projects' && 'text-red-500 transform scale-125 transition-transform duration-300'}`}>PROJETOS</Link>
                     {/* <Link to="/about" className={`hover:text-red-500 ${activePath === '/about' && 'text-red-500 transform scale-110 transition-transform duration-300'}`}>SOBRE</Link>
