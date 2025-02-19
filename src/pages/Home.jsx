@@ -62,7 +62,7 @@ export default function Home() {
                     <div className="relative flex flex-col items-center justify-center">
                         <div className="flex items-center  justify-center bg-white w-[320px] h-[320px] sm:w-[380px] sm:h-[380px]  md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden relative">
                             <img src={background} alt="" loading="lazy" className="bg-cover w-full h-full bg-center" />
-                            <img src={profile} alt="" loading="lazy" className="hover:scale-110 transition-transform duration-300 absolute h-[300px] sm:h-[430px] md:h-[460px] lg:h-[500px] -bottom-2 left-1 lg:left-4 -rotate-3" />
+                            <img src={profile} alt="" loading="lazy" className="hover:scale-110 transition-transform duration-300 absolute h-[300px] sm:h-[430px] md:h-[460px] lg:h-[500px] -bottom-2 left-6 md:left-3 lg:left-4 -rotate-3" />
                         </div>
                     </div>
                 </div>
