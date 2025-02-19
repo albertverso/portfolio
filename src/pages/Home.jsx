@@ -1,14 +1,23 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
-import title from "../assets/titulo.png";
+import titleBr from "../assets/titulo.png";
+import titleEn from "../assets/title.png";
 import background from "../assets/background.png";
 import profile from "../assets/profile.png";
 import SwiperIcons from "../components/SwiperIcons";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import LazyLoad from "react-lazy-load";
+import { useRef } from "react";
+import { useTranslation } from "react-i18next";
+
 
 export default function Home() {
+    const { t, i18n } = useTranslation(); // Hook para acessar traduções
+
+    const imgTitle = i18n.language === 'en' ? titleEn : titleBr;
+
+    console.log(t.language);
     const handleDownloadCV = () => {
         const pathCV = '/CV.pdf';
         const link = document.createElement('a');
@@ -17,23 +26,34 @@ export default function Home() {
         link.click();
     }
 
+    const sectionRef = useRef(null);
+
+    const scrollToSection = () => {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
-        <div className="flex flex-col justify-center items-center text-white lg:pb-5 w-full px-5 md:px-20 lg:px-32 xl:px-42 gap-10">
-            <div className="flex flex-col gap-4 lg:gap-8 text-center">
+        <div className="flex flex-col justify-center items-center text-white lg:pb-5 w-full px-5 md:px-20 lg:px-32 xl:px-42 lg:gap-10">
+            <div className="flex flex-col items-center justify-center gap-4 lg:gap-8 text-center">
                 <LazyLoad>
-                    <img loading="lazy" src={title}/>
+                    <picture>
+                        <source srcSet={imgTitle} type="image/webp" />
+                        <img loading="lazy" src={imgTitle} />
+                    </picture>
                 </LazyLoad>
                 <div className="flex flex-col lg:flex-row gap-5">
                     <div className="flex flex-col items-center justify-center text-justify gap-4 lg:gap-10 lg:px-10">
-                        <p className="">Sou desenvolvedor fullstack com 2 anos de experiência, focado em criar soluções eficientes e escaláveis. Combinando habilidades de frontend e backend, busco sempre melhorar a experiência do usuário.</p>
-                        <p className="">Atualmente, atuo como desenvolvedor de automações de sistemas para o Grupo Carmais, grupo líder no segmento de concessionárias no Nordeste e uma das maiores do Brasil, que continua buscando aprimorar suas tecnologias.</p>
+                        <p className="">{t("text_home_1")}</p>
+                        <p className="">{t("text_home_2")}</p>
                         <div className=" flex flex-col items-center justify-center font-semibold">
                             <button onClick={handleDownloadCV} className="flex flex-row mb-5 w-full items-center justify-center gap-2 border border-white rounded-md p-2 hover:border-red-500 hover:text-red-500">
-                                Baixar CV
+                                <p className="w-full text-center">
+                                    {t("download_cv")}
+                                </p>
                             </button>
-                            <Link to="/contact" className=" flex border-b-[1px] hover:border-red-500 hover:text-red-500 items-center justify-center">
-                                <p className="text-nowrap">
-                                    ENTRE EM CONTATO
+                            <Link  onClick={scrollToSection} className=" flex border-b-[1px] hover:border-red-500 hover:text-red-500 items-center justify-center">
+                                <p className="text-nowrap uppercase">
+                                    {t("contact_us")}
                                 </p>
                                 <IoIosArrowRoundForward size={20}/>
                             </Link>
@@ -47,11 +67,11 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="flex relative justify-center items-center text-white w-full px-10 -right-3 mb-2">
+            <div className="flex relative justify-center items-center text-white w-full px-10 -right-3 mb-10 mt-5 lg:mb-5">
                 <SwiperIcons size="md" view={10} spaceBetween={10} />
             </div>   
             <About/>
-            <Contact />
+            <Contact sectionRef={sectionRef}/>
         </div>
     )
 }

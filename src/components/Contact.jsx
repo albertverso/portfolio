@@ -5,7 +5,7 @@ import { PiInstagramLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
 import { sendEmail } from "../service/emailService";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-export default function Contact() {
+export default function Contact({sectionRef}) {
     const [assunto, setAssunto] = useState('');
     const [email, setEmail] = useState('');
     const [mensagem, setMensagem] = useState('');
@@ -60,7 +60,7 @@ export default function Contact() {
                     </div>
                 </div>
             )}
-            <form onSubmit={handleSubmit} className="flex flex-col justify-center items-start text-black gap-5 lg:gap-10 font-semibold w-full">
+            <form onSubmit={handleSubmit} ref={sectionRef} className="flex flex-col justify-center items-start text-black gap-1 lg:gap-5 font-semibold w-full">
                 <h1 className="text-3xl underline underline-offset-4 text-white hover:text-red-500 hover:cursor-pointer">Contato</h1>
                 <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10 px-5">
                         <div className="flex flex-col gap-5 w-full">
@@ -114,10 +114,10 @@ export default function Contact() {
                 <div className="flex flex-col w-full items-center justify-center text-white ">
                     <button 
                         disabled={loading}
-                        className={`flex flex-row mb-5 items-center justify-center gap-2 border border-white rounded-md p-2 hover:border-red-500 hover:text-red-500 lg:w-2/12 w-2/6 ${loading ? 'opacity-80 cursor-not-allowed' : ''}`}
+                        className={`flex flex-row my-4 items-center justify-center gap-2 border border-white rounded-md p-2 hover:border-red-500 hover:text-red-500 lg:w-2/12 w-2/6 ${loading ? 'opacity-80 cursor-not-allowed' : ''}`}
                         type="submit"
                     >
-                    {loading ? <AiOutlineLoading3Quarters size={24} className="animate-spin" /> : 'Enviar'}
+                    {loading ? <AiOutlineLoading3Quarters size={24} className="animate-spin w-full" /> : <p className="text-center w-full">Enviar</p>}
                     </button>
                     <span>{error && <p className="text-red-500">{error}</p>}</span>
                 </div>
