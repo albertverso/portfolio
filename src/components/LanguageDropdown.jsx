@@ -19,6 +19,7 @@ const LanguageDropdown = () => {
   useEffect(() => {
     if (selectedLanguage !== i18n.language) {
       i18n.changeLanguage(selectedLanguage); // Altera o idioma no i18next
+
     }
   }, [selectedLanguage, i18n]);
 
@@ -27,9 +28,15 @@ const LanguageDropdown = () => {
   };
 
   const handleSelect = (language) => {
-    setSelectedLanguage(language); // Atualiza o estado
-    localStorage.setItem("selectedLanguage", language); // Salva no localStorage
-    setIsOpen(false); // Fecha o dropdown após a seleção
+    if (language !== selectedLanguage) {
+      setSelectedLanguage(language); // Atualiza o estado
+      localStorage.setItem("selectedLanguage", language); // Salva no localStorage
+      i18n.changeLanguage(language); // Altera o idioma no i18next
+      setIsOpen(false); // Fecha o dropdown após a seleção
+      setTimeout(() => {
+        window.location.reload(); // Recarrega a página após a troca de idioma
+      }, 0); // Pequeno delay para garantir que o estado foi atualizado
+    }
   };
 
   const handleClickOutside = (event) => {

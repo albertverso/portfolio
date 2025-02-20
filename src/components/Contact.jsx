@@ -62,7 +62,7 @@ export default function Contact({sectionRef}) {
             <form onSubmit={handleSubmit} ref={sectionRef} className="flex flex-col justify-center items-start text-black gap-1 lg:gap-5 font-semibold w-full">
                 <h1 className="text-3xl underline underline-offset-4 text-white hover:text-red-500 hover:cursor-pointer">{t("contact")}</h1>
                 <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-5 lg:gap-10 px-5">
-                        <div className="flex flex-col gap-5 w-full mt-4">
+                        <div className="flex flex-col gap-5 w-full mt-4 lg:mt-0">
                             <div className="flex flex-col gap-1">
                                 <label className="text-white">{t("name_contact")}:</label>
                                 <input 
