@@ -48,7 +48,7 @@ const resources = {
         header_home: "Inicio",
         header_projects: "Projetos",
         text_home_1: "Sou desenvolvedor fullstack com 2 anos de experiência, focado em criar soluções eficientes e escaláveis. Combinando habilidades de frontend e backend, busco sempre melhorar a experiência do usuário.",
-        text_home_1:"Atualmente, atuo como desenvolvedor de automações de sistemas para o Grupo Carmais, grupo líder no segmento de concessionárias no Nordeste e uma das maiores do Brasil, que continua buscando aprimorar suas tecnologias.",
+        text_home_2:"Atualmente, atuo como desenvolvedor de automações de sistemas para o Grupo Carmais, grupo líder no segmento de concessionárias no Nordeste e uma das maiores do Brasil, que continua buscando aprimorar suas tecnologias.",
         download_cv: "Baixar CV",
         about: "Sobre",
         Experience: "Experiência",
