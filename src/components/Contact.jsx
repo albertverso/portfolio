@@ -4,6 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { PiInstagramLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
 import { sendEmail } from "../service/emailService";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 export default function Contact({sectionRef}) {
     const [assunto, setAssunto] = useState('');
@@ -13,6 +14,7 @@ export default function Contact({sectionRef}) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         if (success) {
@@ -53,60 +55,61 @@ export default function Contact({sectionRef}) {
             {success && (
                 <div className="fixed top-0 left-0 w-full h-full flex items-start justify-end pt-10 pr-10 bg-black bg-opacity-50">
                     <div className="bg-white p-5 rounded-md shadow-lg text-center">
-                        <p className="text-black font-semibold">E-mail enviado com sucesso!</p>
-                        {/* <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-md" onClick={() => setSuccess(false)}>
-                            Fechar
-                        </button> */}
+                        <p className="text-black font-semibold">{t("messageSent")}</p>
                     </div>
                 </div>
             )}
             <form onSubmit={handleSubmit} ref={sectionRef} className="flex flex-col justify-center items-start text-black gap-1 lg:gap-5 font-semibold w-full">
-                <h1 className="text-3xl underline underline-offset-4 text-white hover:text-red-500 hover:cursor-pointer">Contato</h1>
-                <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-10 px-5">
-                        <div className="flex flex-col gap-5 w-full">
+                <h1 className="text-3xl underline underline-offset-4 text-white hover:text-red-500 hover:cursor-pointer">{t("contact")}</h1>
+                <div className="flex lg:flex-row flex-col w-full grid-flow-col gap-5 lg:gap-10 px-5">
+                        <div className="flex flex-col gap-5 w-full mt-4">
                             <div className="flex flex-col gap-1">
-                                <label className="text-white">Nome</label>
+                                <label className="text-white">{t("name_contact")}:</label>
                                 <input 
                                     type="text" 
-                                    className="outline-none bg-white p-1 focus:ring-2 focus:ring-red-500 rounded-md" 
+                                    className="outline-none font-normal bg-white p-1 focus:ring-2 focus:ring-red-500 rounded-md" 
                                     name="nome"
                                     value={nome}
                                     onChange={ (e) => setNome(e.target.value) }
                                     required
+                                    placeholder={t("name_contact")}
                                     />
                             </div>
                             <div className="flex flex-col gap-1">
-                                <label className="text-white">Email</label>
+                                <label className="text-white">{t("email_contact")}:</label>
                                 <input 
                                     type="email" 
-                                    className="outline-none p-1 bg-white focus:ring-2 focus:ring-red-500 rounded-md" 
+                                    className="outline-none font-normal p-1 bg-white focus:ring-2 focus:ring-red-500 rounded-md" 
                                     name="email"
                                     value={email}
                                     onChange={ (e) => setEmail(e.target.value) }   
                                     required 
+                                    placeholder={t("email_contact")}
                                     />
                             </div>
                             <div className="flex flex-col gap-1">
-                                <label className="text-white">Assunto</label>
+                                <label className="text-white">{t("subject_contact")}:</label>
                                 <input 
                                     type="text" 
-                                    className="outline-none p-1 bg-white focus:ring-2 focus:ring-red-500 rounded-md" 
+                                    className="outline-none font-normal p-1 bg-white focus:ring-2 focus:ring-red-500 rounded-md" 
                                     name="assunto"
                                     value={assunto}
                                     onChange={ (e) => setAssunto(e.target.value) }
                                     required
+                                    placeholder={t("subject_contact")}
                                     />
                             </div>
                         </div>
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col gap-1">
-                            <label className="text-white">Mensagem</label>
+                            <label className="text-white">{t("message_contact")}:</label>
                             <textarea 
-                                className="outline-none resize-none p-1 bg-white focus:ring-2 h-48 focus:ring-red-500 rounded-md" 
+                                className="outline-none font-normal text-sm resize-none p-1 bg-white focus:ring-2 h-48 focus:ring-red-500 rounded-md" 
                                 name="mensagem"
                                 value={mensagem}
                                 onChange={ (e) => setMensagem(e.target.value) }
                                 required
+                                placeholder={t("message_contact")}
                                 />
                         </div>
                     </div>
@@ -117,7 +120,13 @@ export default function Contact({sectionRef}) {
                         className={`flex flex-row my-4 items-center justify-center gap-2 border border-white rounded-md p-2 hover:border-red-500 hover:text-red-500 lg:w-2/12 w-2/6 ${loading ? 'opacity-80 cursor-not-allowed' : ''}`}
                         type="submit"
                     >
-                    {loading ? <AiOutlineLoading3Quarters size={24} className="animate-spin w-full" /> : <p className="text-center w-full">Enviar</p>}
+                    {loading ?  
+                        <div className="flex flex-row gap-2 items-center justify-center">
+                            <span>{t("sending")}</span>
+                            <AiOutlineLoading3Quarters size={24} className="animate-spin w-full" /> 
+                        </div> 
+                        : <p className="text-center w-full">{t("send_contact")}</p>}
+                        
                     </button>
                     <span>{error && <p className="text-red-500">{error}</p>}</span>
                 </div>

@@ -42,7 +42,7 @@ export default function Home() {
                     </picture>
                 </LazyLoad>
                 <div className="flex flex-col lg:flex-row gap-5">
-                    <div className="flex flex-col items-center justify-center text-justify gap-4 lg:gap-10 lg:px-10">
+                    <div className="flex flex-col items-center justify-center text-justify gap-4 lg:gap-10">
                         <p className="">{t("text_home_1")}</p>
                         <p className="">{t("text_home_2")}</p>
                         <div className=" flex flex-col items-center justify-center font-semibold">
