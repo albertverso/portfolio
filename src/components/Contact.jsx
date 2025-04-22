@@ -104,7 +104,7 @@ export default function Contact({sectionRef}) {
                         <div className="flex flex-col gap-1">
                             <label className="text-white">{t("message_contact")}:</label>
                             <textarea 
-                                className="outline-none font-normal text-sm resize-none p-1 bg-white focus:ring-2 h-48 focus:ring-red-500 rounded-md" 
+                                className="outline-none font-normal resize-none p-1 bg-white focus:ring-2 h-48 focus:ring-red-500 rounded-md" 
                                 name="mensagem"
                                 value={mensagem}
                                 onChange={ (e) => setMensagem(e.target.value) }
@@ -140,10 +140,10 @@ export default function Contact({sectionRef}) {
                         <PiLinkedinLogoBold className="text-white text-5xl hover:text-red-500 group-hover:text-red-500 "/>
                         <p className="group-hover:text-red-500 ">Linkedin</p>
                     </a>
-                    <a href="http://www.instagram.com/albertverso" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="http://www.instagram.com/albertverso" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center" target="_blank" rel="noopener noreferrer">
                         <PiInstagramLogoBold className="text-white text-5xl hover:text-red-500 group-hover:text-red-500 "/>
                         <p className="group-hover:text-red-500 ">Instagram</p>
-                    </a>
+                    </a> */}
                     <a href="mailto:alsguert@gmail.com" className="group transform hover:scale-110 transition-transform duration-300 flex flex-col gap-2 items-center justify-center">
                         <MdOutlineEmail className="text-white text-5xl hover:text-red-500 group-hover:text-red-500 "/>
                         <p className="group-hover:text-red-500 ">Email</p>

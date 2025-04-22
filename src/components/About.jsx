@@ -73,7 +73,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="">
                         <Timeline
                         sx={{
                             [`& .${timelineOppositeContentClasses.root}`]: {
@@ -85,9 +85,18 @@ export default function About() {
                                 <TimelineOppositeContent >
                                 2023
                                 </TimelineOppositeContent>
-                                <TimelineSeparator>
+                                <TimelineSeparator >
                                 <TimelineDot sx={{ backgroundColor: "#ef4444" }} />
-                                <TimelineConnector sx={{ height: "80px" }} />
+                                <TimelineConnector
+                                sx={{
+                                    height: {
+                                    xs: "100px",
+                                    sm: "100px",
+                                    md: "100px",
+                                    lg: "280px",
+                                    },
+                                }}
+                                />
                                 </TimelineSeparator>
                                 <TimelineContent>{t("frontend_developer")}</TimelineContent>
                             </TimelineItem>
@@ -97,7 +106,16 @@ export default function About() {
                                 </TimelineOppositeContent>
                                 <TimelineSeparator>
                                 <TimelineDot sx={{ backgroundColor: "#ef4444" }} />
-                                <TimelineConnector sx={{ height: "80px" }} />
+                                <TimelineConnector
+                                sx={{
+                                    height: {
+                                    xs: "100px",
+                                    sm: "100px",
+                                    md: "100px",
+                                    lg: "280px",
+                                    },
+                                }}
+                                />
                                 </TimelineSeparator>
                                 <TimelineContent>{t("automation_developer")}</TimelineContent>
                             </TimelineItem>
